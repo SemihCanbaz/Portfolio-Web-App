@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -45,11 +44,12 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-12 h-12 object-contain rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            className="w-20 h-20 object-contain rounded-full border-4 border-gray-300 shadow-md hover:shadow-xl hover:border-gray-500 transition-transform transform hover:scale-110 duration-300 ease-in-out bg-transparent"
           />
+
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Semih &nbsp;
-            <span className="sm:block hidden"> | JavaScript Mastery</span>
+            <span className="sm:block hidden"> | Front-End Developer</span>
           </p>
         </Link>
 
