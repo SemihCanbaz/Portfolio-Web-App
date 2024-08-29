@@ -21,6 +21,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  fooddelivery,
+  globiawebapp,
+  izmirtourism,
 } from "../assets";
 
 export const navLinks = [
@@ -250,6 +253,70 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "Food Delivery",
+    description:
+      "A web application for ordering food from various restaurants. Users can browse menus, place orders, and track deliveries in real-time.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fooddelivery, // Update with the actual image path
+    source_code_link: "https://github.com/SemihCanbaz/food-del",
+  },
+  {
+    name: "Globia Web App",
+    description:
+      "An advanced web application showcasing a modern user interface for a fictional company. Features include dynamic content, interactive elements, and responsive design.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: globiawebapp, // Update with the actual image path
+    source_code_link: "https://github.com/your-repo/globia-web-app",
+  },
+  {
+    name: "Izmir Tourism",
+    description:
+      "A modern web application showcasing the historical and tourist attractions of Izmir. Features an interactive map, detailed place information, and a visually appealing 3D card effect for showcasing images and content.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react-router",
+        color: "orange-text-gradient",
+      },
+    ],
+
+    image: izmirtourism, // Update with the actual image path
+    source_code_link: "https://github.com/your-repo/professional-example",
   },
 ];
 

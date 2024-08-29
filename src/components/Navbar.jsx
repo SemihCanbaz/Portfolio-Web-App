@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"; // Import icons from react-icons
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -44,7 +45,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-20 h-20 object-contain rounded-full border-4 border-gray-300 shadow-md hover:shadow-xl hover:border-gray-500 transition-transform transform hover:scale-110 duration-300 ease-in-out bg-transparent"
+            className="w-20 h-20 object-contain rounded-full border-4 border-purple-500 shadow-lg hover:shadow-2xl hover:border-purple-700 transition-transform transform hover:scale-110 duration-300 ease-in-out bg-transparent"
           />
 
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
@@ -53,7 +54,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row gap-10 items-center">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -65,6 +66,32 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+          {/* Social Media Icons */}
+          <div className="flex items-center gap-6">
+            <a
+              href="https://github.com/SemihCanbaz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition-colors duration-300"
+            >
+              <FaGithub size={28} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/semih-canbaz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-400 transition-colors duration-300"
+            >
+              <FaLinkedin size={28} />
+            </a>
+            <a
+              href="mailto:semihcanbaz431043@gmail.com"
+              className="text-white hover:text-gray-400 transition-colors duration-300"
+            >
+              <FaEnvelope size={28} />
+            </a>
+          </div>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -95,6 +122,32 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+
+              {/* Social Media Icons for Mobile */}
+              <div className="flex justify-center items-center gap-6 mt-4">
+                <a
+                  href="https://github.com/SemihCanbaz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-400 transition-colors duration-300"
+                >
+                  <FaGithub size={28} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/semih-canbaz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-gray-400 transition-colors duration-300"
+                >
+                  <FaLinkedin size={28} />
+                </a>
+                <a
+                  href="mailto:semihcanbaz431043@gmail.com"
+                  className="text-white hover:text-gray-400 transition-colors duration-300"
+                >
+                  <FaEnvelope size={28} />
+                </a>
+              </div>
             </ul>
           </div>
         </div>
